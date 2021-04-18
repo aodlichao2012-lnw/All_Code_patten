@@ -1,0 +1,16 @@
+/* storm  */
+
+.content-outer {
+	margin: 0 auto;
+	padding-bottom: 27px;/*Footer height*/
+}
+
+.content-inner {
+	width: 940px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding: 0;
+	line-height: 150%;
+}
