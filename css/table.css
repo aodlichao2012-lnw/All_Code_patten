@@ -1,0 +1,33 @@
+/* storm */
+
+table.storm-table {
+	font-size: 11px;
+	color: #bbbbbb;
+	border-width: 1px;
+	border-color: #000;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.storm-table th {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #000;
+	font-weight: bold;
+	background-image: url(../images/up-bg.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #171717;
+	color: #fff;
+}
+table.storm-table td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #000;
+}
+table.storm-table tr{
+	background-color:#070707;
+}
+
+/* =========================== */

@@ -41,3 +41,52 @@
 	border: 1px solid #252525;
 	width: 750px;
 }
+
+
+
+/*****************************************************
+3.  VERTICAL NAVIGATION (USED IN BLOG)
+******************************************************/
+
+ul.vert-nav-ul {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+ul.vert-nav-ul li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+ul.vert-nav-ul li a {
+	line-height: 18px;
+	text-align: left;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	padding-left: 18px;
+	display: block;
+	color: #FFF;
+	font-size: 12px;
+	text-shadow: -1px -1px 0px #000;
+	background-image: url(../images/vert-nav-arrow.png);
+	background-repeat: no-repeat;
+	background-position: left 8px;
+}
+ul.vert-nav-ul li a:hover {
+	text-decoration: none;
+	color: #ffa200;
+	background-color: #070707;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-position: 10px 8px;
+	padding-left: 28px;
+	padding-right: 10px;
+}
