@@ -1,0 +1,109 @@
+/*****************************************************
+18.  PORTFOLIO / GALLERY STYLES
+******************************************************/
+
+.portfolio li {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.twocol-portfolio {margin-right: -20px; margin-top: -20px;}
+.twocol-portfolio .one-portfolio-item {
+    width: 440px;
+    height: 275px;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: left;
+    position: relative;
+}
+
+.threecol-portfolio {margin-right: -10px; margin-top: -10px;}
+.threecol-portfolio .one-portfolio-item {
+	width: 293px;
+	height: 183px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+    position: relative;
+}
+
+.fourcol-portfolio {margin-right: -10px; margin-top: -10px;}
+.fourcol-portfolio .one-portfolio-item {
+	width: 217px;
+	height: 136px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+    position: relative;
+}
+
+.fivecol-portfolio {margin-right: -10px; margin-top: -10px;}
+.fivecol-portfolio .one-portfolio-item {
+	width: 172px;
+	height: 108px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+    position: relative;
+}
+
+.sixcol-portfolio {margin-right: -10px; margin-top: -10px;}
+.sixcol-portfolio .one-portfolio-item {
+	width: 141px;
+	height: 88px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+    position: relative;
+}
+
+.grid-portfolio {margin-right: -1px; margin-top: -1px;}
+.grid-portfolio .one-portfolio-item {
+	width: 99px;
+	height: 62px;
+	margin-right: 1px;
+	margin-top: 1px;
+	float: left;
+    position: relative;
+}
+
+.portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+	background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.twocol-portfolio .portfolio-hover {
+    background-image: url(../images/2-col-hover.png);
+	width: 440px;
+    height: 275px;
+}
+.threecol-portfolio .portfolio-hover {
+    background-image: url(../images/3-col-hover.png);
+	width: 293px;
+    height: 183px;
+}
+.fourcol-portfolio .portfolio-hover {
+    background-image: url(../images/4-col-hover.png);
+	width: 217px;
+    height: 136px;
+}
+.fivecol-portfolio .portfolio-hover {
+    background-image: url(../images/5-col-hover.png);
+	width: 172px;
+    height: 108px;
+}
+.sixcol-portfolio .portfolio-hover {
+    background-image: url(../images/6-col-hover.png);
+	width: 141px;
+    height: 88px;
+}
+.grid-portfolio .portfolio-hover {
+    background-image: url(../images/grid-hover.png);
+	width: 99px;
+    height: 62px;
+}
