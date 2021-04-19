@@ -153,3 +153,44 @@ a.min {
 a.min:hover {
 	background-image: url(../images/minimise1.png);
 }
+
+/* // the icon */
+  .icon {
+    color: rgba(black, .15);
+    z-index: 0;
+  }
+ i {
+      font-size: 90px;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      transition: transform transition-speed linear;
+        font-size: 70px;
+        top: 20px;
+      
+ }
+    svg {
+      font-size: 70px;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      transition: transform transition-speed linear;
+    }
+  
+
+  /* // Small box hover state */
+  :hover {
+    text-decoration: none;
+  }
+    /* // Animate icons on small box hover */
+    .icon i {
+        
+          transform: scale(1.1);
+        }
+      
+      svg {
+        transform: scale(1.1);
+      }
+    
+  
+
