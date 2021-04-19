@@ -52,4 +52,52 @@ public static string GetCustomers()
             }
         }
     }
+
+
+//Nssql
+
+  public static object get_data_pm_traf()
+        {
+            object res = null;
+            DataTable dt = new DataTable();
+
+            string connstring = WebConfigurationManager.ConnectionStrings["pkk_conection"].ConnectionString;
+
+            NpgsqlConnection conn = new NpgsqlConnection(connstring);
+            conn.Open();
+
+            string strsql;
+
+            strsql = "SELECT * FROM pkk_warning.v_pm_traf_val  ";
+
+            NpgsqlCommand objcmd = new NpgsqlCommand(strsql, conn);
+            objcmd.CommandType = CommandType.Text;
+
+            NpgsqlDataReader dr = objcmd.ExecuteReader();
+
+            List<sc_pm_traf_chart> ldata = new List<sc_pm_traf_chart>();
+            sc_pm_traf_chart tmp_data = new sc_pm_traf_chart();
+
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    tmp_data = new sc_pm_traf_chart();
+                    //tmp_data.yy = Convert.ToInt32(dr["yy"]); 
+                    //tmp_data.mm = Convert.ToInt32(dr["mm"]);
+                    tmp_data.station = dr["station_name"].ToString();
+                    tmp_data.pm = Convert.ToInt32(dr["pm25_val"]);
+                    tmp_data.traf = Convert.ToInt32(dr["trafic_val"]);
+
+                    ldata.Add(tmp_data);
+                };
+
+
+            }
+            sc_pm_traf_chart[] arr_data = ldata.ToArray();
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            res = serializer.Serialize(arr_data);
+
+            return res;
+        }
 }
