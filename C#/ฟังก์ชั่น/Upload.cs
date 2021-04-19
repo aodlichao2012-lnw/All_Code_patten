@@ -1,8 +1,8 @@
         protected void UploadTextFile(object sender, EventArgs e)
         {
-            //string filePath = Server.MapPath("~/Files/") + Path.GetFileName(FileUpload1.PostedFile.FileName);
-            //if (File.Exists(filePath)) { File.Delete(filePath); }
-            //FileUpload1.SaveAs(filePath);
+            // string filePath = Server.MapPath("~/Files/") + Path.GetFileName(FileUpload1.PostedFile.FileName);
+            // if (File.Exists(filePath)) { File.Delete(filePath); }
+            // FileUpload1.SaveAs(filePath);
 
             HttpPostedFile postedFile = FileUpload1.PostedFile;
             string filePath = "";
